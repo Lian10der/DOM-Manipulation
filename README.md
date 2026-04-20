@@ -1,2 +1,2 @@
-# Manipula-o-de-DOM
+# DOM-Manipulation
 Estudos e Testes com o JavaScript DOM.
