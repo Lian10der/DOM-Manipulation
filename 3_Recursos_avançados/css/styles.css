@@ -1,0 +1,138 @@
+html {
+    font-size: 15px;
+    margin-bottom: 1000px;
+}
+
+
+/* 1 - Estilos de listas */
+.lista-pontos {
+    list-style-type: square;
+}
+
+.lista-numerica {
+    list-style-type: lower-roman;
+}
+
+.lista-imagem {
+    list-style-type: none;
+    list-style-image: url("/3_Recursos_avançados/img/circle.png")
+}
+
+/* 2 unidades de medida */
+
+.container {
+    width: 80%;
+    border: 1px solid blue;
+}
+
+.pixel-box {
+    width: 200px;
+    height: 100px;
+    border: 2px solid red
+}
+
+/* 1000px (html) -> 800px 80% (container) -> 400px 50% (percent-box)*/
+.percent-box {
+    width: 50%;
+    height: 100px;
+    border: 1px solid green
+}
+
+/* 2x o tamanho de fone de elemento pai */
+/* em fonte controlada pelo el.api */
+.em-text {
+    font-size: 2em;
+}
+
+/* rem, fonte controlada pelo root el */
+.rem-text {
+    font-size: 2rem;
+}
+
+/* Cenário real: px e rem */
+/* precisa conhecer todas pq tem projeto antigo */
+
+/* regras 2 tipos: específicos, medidas */
+
+/* 3 - Pseudo alguma coisa */
+
+.styled-list {
+    list-style-type: none;
+}
+
+.styled-list li:first-child {
+    color: red;
+}
+
+.styled-list li:last-child{
+    color: blue;
+}
+
+.styled-list li::before{
+    content: "* ";
+}
+
+.hover-box {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+}
+
+.hover-box:hover {
+    background-color: blueviolet;
+    transform: scale(1.1);
+}
+
+/* 4 - Degradê */
+.linear-gradient-box,
+.radial-gradient-box,
+.multiple-gradient-box{
+    height:200px;
+}
+
+.linear-gradient-box {
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to right, red, blueviolet);
+}
+
+.radial-gradient-box{
+    
+    color: white;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    background-image: radial-gradient(circle, red, orange, blueviolet);
+}
+
+.multiple-gradient-box{
+    background-image: linear-gradient(
+    to left,
+     rgba(80,150,255,0.7),
+     rgba(120,220,255,0)
+     ), 
+     radial-gradient(circle at top, yellow, blueviolet);
+}
+.box-shadow-example{
+    width: 300px;
+    height: 100px;
+    background-color: #f0f0f0;
+    box-shadow: 5px 5px 20px #000;
+}
+
+.text-shadow-example{
+    font-size: 30px;
+    color: #fff;
+    background-color: yellow;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.multiple-shadow-box {
+    width: 300px;
+    height: 100px;
+    box-shadow: 3px 3px 5px rgba(2, 236, 197, 0.616),
+    8px 8px 5px rgba(185, 24, 29, 0.5);
+}

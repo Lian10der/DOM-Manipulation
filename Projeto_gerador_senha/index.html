@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="register-container">
+        
+        <div id="register-banner">
+            <div id="banner-layer">
+                <img src="img/09.png" alt="log">
+                <div id="text-title">
+                    <h1>Construa algo incrível hoje!</h1>
+                    <p>Transforme sua rotina em performance</p>
+                </div>
+            </div>
+        </div> <div id="register-form">
+            <h2>Criar Conta</h2>
+            <p id="subtitle">Seja bem-vindo! Registre-se para utilizar o app.</p>
+            
+            <div class="form-control">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu nome">
+            </div>
+            
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="Digite o seu E-mail">
+            </div>
+            
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </div>
+            
+            <p>Quer ajuda para criar uma senha segura? <span id="open-generate-password">clique aqui.</span></p>
+            
+            <div class="hide" id="generate-options">
+                <p>Selecione as opções que deseja</p>
+                
+                <div class="form-control-caracter">
+                    <label for="length">Quantidade de caracteres</label>
+                    <input type="text" name="length" id="length" value="10">
+                </div>
+                
+                <div class="form-control-checkbox">
+                    <input type="checkbox" id="letters" name="letters" checked>
+                    <label for="letters">Letras</label>
+                </div>
+                
+                <div class="form-control-checkbox">
+                    <input type="checkbox" id="numbers" name="numbers" checked>
+                    <label for="numbers">Números</label>
+                </div>
+                
+                <div class="form-control-checkbox">
+                    <input type="checkbox" id="symbols" name="symbols" checked>
+                    <label for="symbols">Símbolos</label>
+                </div>
+                
+                <button id="generate-password">Gerar Senha</button>
+            </div>
+            
+            <div id="generated-password">
+                <p>Aqui está a sua senha:</p>
+                <div id="container-password-generated">
+                    <h4>Teste</h4>
+                    <button id="copy-password">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="form-control">
+                <label for="confirmpassword">Confirme a sua senha</label>
+                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Digite novamente a sua senha">
+            </div>
+            
+            <div id="confirmed">
+                <input type="checkbox" name="confirmed" id="confirmed">
+                <label for="confirmed">Concordo com os <a href="#">Termos e a Política de Privacidade</a>.</label>
+            </div>
+            
+            <input type="submit" value="Cadastrar">
+            
+            <div id="register-sign">
+                <p>Já tem uma conta? <a href="#">Entre</a></p>
+            </div>
+
+        </div> </div> </body>
+</html>

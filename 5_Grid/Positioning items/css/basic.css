@@ -1,0 +1,48 @@
+@keyframes abrindo{
+  0%   {grid-gap: 0px;}
+  50%  {grid-gap: 15px;}
+  100% {grid-gap: 0px;}
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.container {
+    background-image: linear-gradient(to right, red, yellow);
+    transition: 1s;
+}
+
+.container:hover{
+    /* animation-name: abrindo;
+    animation-duration: 2s;
+    animation-timing-function: ease-out ; */
+    grid-gap:15px ;
+}
+
+
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.container > div:nth-child(3n) {
+    /* background-image: linear-gradient(to right, red, blueviolet); */
+    background-color: #88d8b0;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+}

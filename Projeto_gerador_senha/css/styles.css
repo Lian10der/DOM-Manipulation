@@ -1,0 +1,275 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html,
+body {
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: linear-gradient(180deg, #E5E5E5 0%, #cecece 100%);
+}
+
+input:focus {
+    outline: none;
+}
+
+#register-container {
+    max-width: 1080px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    background-color: #fdfdfd;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 15px;
+}
+
+#register-banner {
+    background: url("../img/vertical-black-white-shot-erg-desert.jpg");
+    background-size: cover;
+    background-position: cover;
+    width: 40%;
+    border-radius: 15px;
+    padding: 30px 30px;
+    margin: 0.3rem;
+}
+
+#banner-layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#register-banner img {
+    width: 40px;
+}
+
+#register-banner h1 {
+    font-size: 1.6rem;
+    width: 90%;
+    color: white;
+    margin-top: auto;
+}
+
+#register-banner p {
+    width: 80%;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+#register-form {
+    padding: 4rem 9rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#subtitle {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 2.0rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.form-control input {
+    border: 1px solid #cecece;
+    border-radius: 0.4rem;
+    padding: 0.6rem;
+    background-color: #fdfdfd;
+}
+
+#register-form p {
+    font-size: 0.7rem;
+    color: #888;
+    margin-bottom: 2.0rem;
+}
+
+#open-generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#open-generate-password:hover {
+    color: #329ce2
+}
+
+#register-form #generated-password {
+    border: 1px solid #329ce2;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#register-form #generated-password p {
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: #329ce2;
+}
+
+#container-password-generated {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    border: none;
+}
+
+#copy-password {
+    background-color: #329ce2;
+    width: 2rem;
+    padding: 0.5rem;
+    border-radius: .3rem;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button i {
+    color: #fff;
+}
+
+button:hover > i {
+    opacity: 0.5;
+}
+
+#confirmed {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+}
+
+#confirmed label {
+    font-size: 0.7rem;
+    color: #888;
+    line-height: 1;
+}
+
+#confirmed  a {
+   cursor: pointer;
+}
+
+#confirmed input[type="checkbox"] {
+    cursor: pointer;
+    margin: 0;
+}
+
+#register-form input[type="submit"],
+#generate-password {
+    background-color: #333;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    font-weight: bold;
+    color: #fdfdfd;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+}
+
+#register-form input[type="submit"]:hover,
+#generate-password:hover {
+    background-color: #59595f;
+}
+
+#register-sign p {
+    margin: 0px;
+}
+
+#register-sign a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #3270e2;
+}
+
+
+/* seguencia das alterações */
+#generate-options {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+#generate-options p {
+    width: 100%;
+    margin-bottom: 0.4rem;
+}
+
+.form-control-caracter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.form-control-caracter input {
+    width: 20%;
+    height: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    
+    
+}
+
+.form-control-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.form-control input[type="checkbox"] {
+    cursor: pointer;
+    margin: 0;
+}
+
+.hide {
+    display: none !important;
+}
+

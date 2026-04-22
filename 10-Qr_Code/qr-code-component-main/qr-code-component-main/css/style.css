@@ -1,0 +1,72 @@
+html{
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    justify-content: center; 
+    align-items: center;    
+    background-color: hsl(212, 45%, 89%);
+}
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.qr-container{
+    display: grid;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+    background-color: white;
+    padding: 16px;
+    border-radius: 20px;
+    width: 320px;
+    max-width: 80vw;
+    /* width: 100px;*/
+    margin: 0 auto;        
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    perspective: 500px; 
+}
+
+.qrcode{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    transition: ease 1s;
+    cursor: pointer;
+}
+
+.qrcode.girar{
+    transform:rotateX(360deg);
+}
+
+h1{
+    font-size: clamp(14px, 2.5vw, 24px);
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+p{
+    font-size: clamp(10px, 1.5vw, 16px);
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    color: hsl(216, 15%, 48%);
+
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+}
+
+#qrCode{
+    border: none;
+    background-color: transparent;
+    all: unset;
+}
