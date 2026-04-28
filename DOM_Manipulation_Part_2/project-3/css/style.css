@@ -48,6 +48,7 @@ body {
 /* JavaScript Styling Link */
 
 .accordion .content-container.active .answer{
+    overflow: auto;
     height: 150px;
 }
 
